@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input, button {
+    outline: none;
+}
+button {
+    background-color: #0D6EFD;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.03);
+}
+input {
+    padding: 5px 10px;
+}
+textarea{
+    padding: 5px 10px;
+    width: 100%;
+    height: 80px;
+    outline: none;
+}
+html{
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: 10%;
+    width: 100%;
+}
+header h1 {
+    font-size: 50px;
+}
+
+
+/* Main */
+main{
+    height: 90%;
+    width: 100%;
+    padding: 30px;
+}
+
+/* Section Top */
+main .top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main .top .enter {
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #999;
+}
+main .top .enter h2 {
+    font-size: 30px;
+}
+main .top .enter .titleTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+main .top .enter .titleTop input {
+    height: 35px;
+    width: 100%;
+}
+main .top .enter .contentTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+main .top .enter button {
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* Section Bottom */
+main .bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #999;
+}
+main .bottom .blogItems {
+    padding: 10px;
+    border: 1px solid #999;
+    width:32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+main .bottom .blogItems p {
+    font-size: 18px;
+}
+main .bottom .blogItems .comment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+main .bottom .blogItems .comment button {
+    padding: 10px 30px;
+}
+
+
+/* Model */
+main .model {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+main .model .modelItem {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e7e5e5;
+}
+main .model .modelItem input {
+    width: 90%;
+    height: 50px;
+}
+main .model .modelItem button {
+    width: 80%;
+    height: 50px;
+}
+main .model .modelItem button:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #fff;
+}

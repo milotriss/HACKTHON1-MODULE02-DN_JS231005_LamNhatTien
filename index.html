@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic</title>
-    <link rel="stylesheet" href="./dish/index.css">
+    <link rel="stylesheet" href="./dist/index.css">
 </head>
 <body>
-    <script src="./dish/index.js"></script>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <main>
+        <section class="top">
+            <div class="enter">
+                <h2>Add New Blog</h2>
+                <div class="titleTop">
+                    <label for="">Title</label>
+                    <input id="title" placeholder="Blog title" type="text">
+                </div>
+                <div class="contentTop">
+                    <label for="">Content</label>
+                    <textarea id="content" placeholder="Blog content" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button onclick="addNewBlog()">Add New Blog</button>
+            </div>
+        </section>
+        <section class="bottom">
+        </section>
+        <section class="model">
+        </section>
+    </main>
+    <script src="./dist/index.js"></script>
 </body>
 </html>
