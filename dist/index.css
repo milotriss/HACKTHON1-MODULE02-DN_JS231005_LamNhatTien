@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+}
+button, input {
+    outline: none;
+}
+input {
+    padding: 5px 10px;
+}
+i{
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+button {
+    background-color: #3C82F6;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    max-height: 800px;
+    padding: 10px;
+}
+main h1,h3 {
+    text-align: center;
+}
+main .enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .enter input {
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+main .enter button {
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 20px;
+}
+main .listTodo img {
+    object-fit:cover;
+    transform: translateX(150px);
+}
+main .listTodo  .todoItems {
+    overflow-y: scroll;
+}
+main .listTodo  .todoItems li  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+main .listTodo  .todoItems li .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+main .listTodo  .todoItems li .checkbox input {
+    height: 20px;
+    width: 20px;
+}
+main .listTodo  .todoItems li .checkbox p {
+    font-size: 25px;
+}
+main .listTodo  .todoItems li .icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+main .listTodo  .todoItems li .icon i:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Model */
+.modelOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modelOverlay .model {
+    padding: 20px;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #000;
+    background-color: #999;
+    border-radius: 20px;
+}
+.modelOverlay .model input {
+    width: 90%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.modelOverlay .model button {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+}
